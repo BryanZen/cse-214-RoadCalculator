@@ -15,6 +15,9 @@ import big.data.DataSource;
  * be able to take in input in the form of two strings from the user
  * (source city and destination city) and use Djikstra’s Algorithm to find the
  * shortest path between their two corresponding Nodes.
+ *
+ * This is the test file:
+ * https://www3.cs.stonybrook.edu/~cse214/hw/hw7-images/hw7.xml
  */
 public class RoadCalculator {
     static HashMap<String, Node> graph;
