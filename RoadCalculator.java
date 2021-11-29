@@ -38,7 +38,7 @@ public class RoadCalculator {
                 System.out.println("Enter a starting point for shortest path or Q to quit: ");
                 startOrQ = sc.nextLine();
                 try {
-                    if (graph.containsKey(startOrQ) || startOrQ.equalsIgnoreCase("Q")) {
+                    if (!graph.containsKey(startOrQ) || !startOrQ.equalsIgnoreCase("Q")) {
                         throw new CityNotFoundException("City not found! ");
                     } else {
                         startOrQB = true;
@@ -57,7 +57,7 @@ public class RoadCalculator {
                 System.out.println("Enter a destination: ");
                 dest = sc.nextLine();
                 try{
-                    if (graph.containsKey(dest)){
+                    if (!graph.containsKey(dest)){
                         throw new CityNotFoundException("City not found! ");
                     } else {
                         destB = true;
